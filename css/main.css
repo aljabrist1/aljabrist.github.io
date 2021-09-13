@@ -1,0 +1,76 @@
+@font-face {
+    font-family: f;
+    src: url(../font/2.ttf);
+  }
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.411);
+    font-family: f !important;
+}
+html{
+    direction: rtl;
+    background-color: rgb(37, 11, 54);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+body>div{
+    background-color: black;
+    width: 2000px;
+    height: 2000px;
+    position: absolute;
+    left: 50%;
+    z-index: -2;
+}
+body>div:first-of-type{    
+    background: radial-gradient(1000px,rgba(255, 0, 0, 0.4),rgba(87, 44, 44, 0));
+    right: -1518px;
+    top: -500px;
+}
+body>div:nth-of-type(2){
+        background: radial-gradient(900px,rgba(0, 255, 218, 0.21),rgba(87, 44, 44, 0));
+        right: 0;
+        top: 0;
+}
+svg{
+    height: 40px;
+    width: 40px;
+    transition-duration: .6s;
+}
+nav>div{
+    display: inline-block;
+    vertical-align: top;
+}
+ul{
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius:0 0 0 20px;
+    width: 60px;
+    transition-duration: .7s;
+    overflow: hidden;
+}
+li{
+    padding: 10px;
+}
+ul a{
+    display: flex;
+    align-items: center;
+}
+ul a>*{
+    flex-shrink: 0;
+}
+h2{
+    display: inline-block;
+    margin-right: 30px;
+}
+nav>span{    
+    margin: 15px;
+    display: inline-block;
+}
+nav span:nth-of-type(2){
+    float: left;
+}
+nav>span:last-of-type svg{
+    height: 50px;
+    width: 50px;
+}
