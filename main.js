@@ -1,15 +1,18 @@
 let men=document.getElementsByTagName("li")[0];
 let ul1=document.getElementsByTagName("ul")[0];
 let mensvg=document.getElementsByTagName("svg")[0];
+let clo=document.getElementsByClassName("clock")[0];
 let mentf=false;
 men.onclick=()=>{
     if(mentf==false){
         ul1.style.width="200px";
         mensvg.style.transform="rotate(180deg)";
+        clo.style.left="-25%";
         mentf=true;
     }else{
         ul1.style.width="60px";
         mensvg.style.transform="rotate(0deg)";
+        clo.style.left="50%";
         mentf=false;
     }
 }

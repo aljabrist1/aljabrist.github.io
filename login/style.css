@@ -10,6 +10,7 @@ form{
     transform: translate(-50%,-50%);
     background-color: #ffffff15;
     border-radius: 15px;
+    z-index: -1;
 }
 form>*{
     padding: 10px;
