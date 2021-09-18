@@ -4,7 +4,7 @@ let mensvg=document.getElementsByTagName("svg")[0];
 let mentf=false;
 men.onclick=()=>{
     if(mentf==false){
-        ul1.style.width="250px";
+        ul1.style.width="200px";
         mensvg.style.transform="rotate(180deg)";
         mentf=true;
     }else{
